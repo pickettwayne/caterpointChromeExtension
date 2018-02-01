@@ -87,6 +87,34 @@
     .flex .fa {
       font-size: 40px;
       color: #f78f1e;
+      
+      
+      
+      //TOOLTIP STUFF
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+    /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+  
   </style>
   <script src="popup.js"></script>
 </head>
@@ -104,22 +132,22 @@
   <div class="modal-icons">
     <div class="flex-container">
       <div class="flex">
-        <a href="http://efoods.e-fresh.co.uk/fpage/login" target="_blank">
+        <a title="Caterpoint Live" href="http://efoods.e-fresh.co.uk/fpage/login" target="_blank">
           <i class="fa fa-globe"></i>
         </a>
       </div>
       <div class="flex">
-        <a href="https://www.twitter.com/efoods" target="_blank">
+        <a title="Efoods Twitter" href="https://www.twitter.com/efoods" target="_blank">
           <i class="fa fa-twitter"></i>
         </a>
       </div>
       <div class="flex">
-        <a href="https://www.facebook.com/efoods.co.uk/" target="_blank">
+        <a title="Efoods Facebook"  href="https://www.facebook.com/efoods.co.uk/" target="_blank">
           <i class="fa fa-facebook"></i>
         </a>
       </div>
       <div class="flex">
-        <a href="https://www.youtube.com/user/efoodsUK" target="_blank">
+        <a title="Efoods Youtube Channel"  href="https://www.youtube.com/user/efoodsUK" target="_blank">
           <i class="fa fa-youtube"></i>
         </a>
       </div>
@@ -127,9 +155,9 @@
         
     <!--Below is the Test site - Try make it look different!-->
       <div class="flex">
-        <a href="http://cp1test.e-fresh.co.uk/fpage/login" target="_blank">
-          <i class="fa fa-globe"></i>
-        </a>
+            <a title="Caterpoint Test Site" href="http://cp1test.e-fresh.co.uk/fpage/login" target="_blank">
+              <i class="fa fa-code"></i>
+            </a>
       </div>
     </div>
   </div>
